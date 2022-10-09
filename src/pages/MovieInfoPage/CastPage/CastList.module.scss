@@ -1,0 +1,26 @@
+.castList{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    gap: 24px;
+
+    border-top: 1px solid #6e6e6e;
+    list-style: none;
+}
+
+.castImg{
+    width: 240px;
+    border-radius: 4px;
+    // height: 360px;
+}
+
+.castItem{
+    max-width: 240px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #6e6e6e;
+    box-shadow: rgb(153, 152, 152) 1px 1px 2px;
+}

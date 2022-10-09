@@ -1,0 +1,20 @@
+.menu{
+  padding-top: 16px;
+  padding-left: 14px;
+}
+
+.movie_list_item{
+   padding-top: 2px;
+   padding-bottom: 2px;
+}
+
+.link{
+    display: inline-block;
+    color: rgb(34, 32, 32);
+    font-size: 14px;
+
+    &:hover{
+        color: rgb(26, 113, 200);
+        font-weight: 600;
+    }
+}

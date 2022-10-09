@@ -1,0 +1,104 @@
+.movieSection{
+    padding: 80px 40px 20px;
+}
+
+.goBackBtn{
+    width: 82px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid rgb(5, 57, 108);
+}
+
+.goBackBtn:hover{
+    color: white;
+    background-color: rgb(26, 113, 200);
+}
+
+.movieWrapper{
+    display: flex;
+    margin-bottom: 6px;
+    padding: 8px;
+    border-bottom: 1px solid #6e6e6e;
+    box-shadow: rgb(153, 152, 152) 1px 1px 2px;
+    background-color: rgb(238, 238, 238);
+}
+
+.movieAdditionalWrapper{
+    margin-bottom: 6px;
+    padding: 8px;
+    border-bottom: 1px solid #6e6e6e;
+    box-shadow: rgb(153, 152, 152) 1px 1px 2px;
+    background-color: rgb(238, 238, 238);
+}
+
+.movieImgThumb{
+    min-width: 320px;
+    border-radius: 4px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.movieImg{
+    width: 320px;
+}
+
+.movieInfo{
+    // max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    padding-left: 40px;
+}
+
+.movieTitle{
+    margin-bottom: 20px;
+    color: rgb(26, 113, 200);
+}
+
+.movieInfoList{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.movieAdditionalInfoList{
+    padding: 12px 32px;
+}
+
+
+.movieInfoItem{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.movieInfoDetail{
+    padding-left: 8px;
+}
+
+.movieInfoWrapper{
+    margin-bottom: 20px;
+}
+
+.movieGenre{
+margin-right: 8px;
+}
+
+.movieInfoItem:not(:last-child){
+    margin-bottom: 6px;
+}
+.movieInfoAbout{
+    padding-top: 8px;
+    font-size: 16px;
+}
+
+.link{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(34, 32, 32);
+    font-size: 16px;
+
+    &.active{
+        font-weight: 600;
+        color: rgb(26, 113, 200);
+    }
+}

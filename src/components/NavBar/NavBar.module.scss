@@ -1,13 +1,18 @@
-.menu{
-    display: flex;
-    justify-content: start;
-    margin: 0;
-    list-style: none;
-    padding-bottom: 16px;
-    padding-top: 16px;
+nav{
+    width: 100%;
+    position: fixed;
+    display: inline;
     border-bottom: 1px solid #6e6e6e;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     background-color: rgb(238, 238, 238);
+}
+
+.menu{
+    display: flex;
+    // justify-content: center;
+    margin: 0;
+    list-style: none;
+    padding: 16px 40px; 
 }
 
 .nav_list_item{
@@ -23,7 +28,8 @@
     text-shadow: rgb(153, 152, 152) 1px 1px 2px;
 
     &.active{
-        color: rgb(18, 81, 144);
+        color: rgb(26, 113, 200);
+        // color: rgb(18, 81, 144);
     }
 }
 
