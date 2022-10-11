@@ -33,7 +33,7 @@ export default function CastPage() {
     <div>
       {loading && <Loader />}
       {error && <p>Movie load fail</p>}
-      {cast && (
+      {cast.length !== 0 ? (
         <div>
           <ul className={css.castList}>
             {cast.map(({name, id, profile_path, character })=>{
@@ -48,8 +48,8 @@ export default function CastPage() {
               )
             })}
           </ul>
-        </div>
-      )}
+        </div>) : <p className={css.noCastInfo}>There is no information about the cast of this movie.</p>
+    }
     </div>
   )
 }

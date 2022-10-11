@@ -1,10 +1,13 @@
+.container{
+  padding-top: 80px;
+  padding-left: 40px;
+}
+
 .SearchForm {
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 500px;
-    padding-top: 80px;
-    padding-left: 20px;
     background-color: #fff;
     border-radius: 3px;
     overflow: hidden;
@@ -64,5 +67,10 @@
     font-size: 16px;
     font-weight: 300;
     color: rgb(69, 67, 67);
+  }
+
+  .notFound{
+    padding-top: 20px;
+    font-weight: 600;
   }
   

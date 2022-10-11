@@ -45,7 +45,7 @@ export default function ReviewsPage() {
               )
             })}
           </ul>
-        </div>) : <p className={css.reviewsItem}>No reviews were found for this movie.</p>
+        </div>) : <p className={css.reviewsItem}>We don't have any reviews for this movie.</p>
       }
     </div>
   )
