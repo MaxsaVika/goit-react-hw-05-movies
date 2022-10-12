@@ -3,16 +3,23 @@
 }
 
 .goBackBtn{
-    width: 82px;
+    position: fixed;
+    top: 16px;
+    right: 40px;
+    width: 120px;
+    height: 32px;
     margin-bottom: 12px;
     border-radius: 6px;
+    font-size: 16px;
+    color: white;
     cursor: pointer;
-    border: 1px solid rgb(5, 57, 108);
+    background-color: rgb(26, 113, 200);
+    box-shadow: rgb(153, 152, 152) 1px 1px 2px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .goBackBtn:hover{
-    color: white;
-    background-color: rgb(26, 113, 200);
+    transform: scale(1.1);
 }
 
 .movieWrapper{
@@ -44,10 +51,8 @@
 }
 
 .movieInfo{
-    // max-width: 420px;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     padding-left: 40px;
 }
 
@@ -80,7 +85,7 @@
 }
 
 .movieGenre{
-margin-right: 8px;
+margin-right: 12px;
 }
 
 .movieInfoItem:not(:last-child){

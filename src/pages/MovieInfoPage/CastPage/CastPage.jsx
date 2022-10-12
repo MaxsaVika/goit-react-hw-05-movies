@@ -1,4 +1,5 @@
 import { searchMovieCast } from "components/Api-service/Api"
+import PropTypes from 'prop-types'
 import { Loader } from "components/shared/Loader/Loader"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
@@ -52,4 +53,11 @@ export default function CastPage() {
     }
     </div>
   )
+}
+
+CastPage.propTypes = {
+  id: PropTypes.number,
+  profile_path: PropTypes.string,
+  name: PropTypes.string,
+  character: PropTypes.string,
 }

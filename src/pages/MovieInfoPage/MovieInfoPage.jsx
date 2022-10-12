@@ -91,8 +91,8 @@ export default function MovieInfoPage() {
             <div className={css.movieAdditionalWrapper}>
                 <h4>Additional information</h4>
                 <ul className={css.movieAdditionalInfoList}>
-                    <li><NavLink state = {{from}} to={castLink} className={getClassName} end>Cast</NavLink></li> 
-                    <li><NavLink state = {{from}} to={reviewsLink} className={getClassName} end>Reviews</NavLink></li> 
+                    <li><NavLink state = {{from}} to={castLink} className={getClassName}>Cast</NavLink></li> 
+                    <li><NavLink state = {{from}} to={reviewsLink} className={getClassName}>Reviews</NavLink></li> 
                 </ul>
                 <Outlet/>
             </div>

@@ -44,7 +44,7 @@ export default function MoviesSearch() {
   return (
     <div className={css.container}>
         <MoviesSearchForm onSubmit = {onSearch}/>  
-        {totalResults ? <MoviesList items={movies} /> : <p className={css.notFound}>Movies not found</p>} 
+        {totalResults ? <MoviesList items={movies} /> : <p className={css.notFound}>Movies not found. Try again.</p>} 
         {loading && <Loader />}
         {error && <p>Movies not found</p>}
     </div> 

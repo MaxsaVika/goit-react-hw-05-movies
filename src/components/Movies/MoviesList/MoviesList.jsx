@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link, useLocation } from 'react-router-dom';
 import css from './MoviesList.module.scss'
 
@@ -17,4 +18,12 @@ export default function MoviesList({items}) {
         );
       });
       return <ul className={css.menu}>{movies}</ul>;
+}
+
+MoviesList.propTypes = {
+  items: PropTypes.array,
+  id: PropTypes.number,
+  title: PropTypes.string,
+  name: PropTypes.string,
+  release_date: PropTypes.string,
 }

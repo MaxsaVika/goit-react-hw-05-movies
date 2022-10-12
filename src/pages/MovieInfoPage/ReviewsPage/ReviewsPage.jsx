@@ -1,4 +1,5 @@
 import { searchMovieReviews } from "components/Api-service/Api"
+import PropTypes from 'prop-types'
 import { Loader } from "components/shared/Loader/Loader"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
@@ -49,4 +50,10 @@ export default function ReviewsPage() {
       }
     </div>
   )
+}
+
+ReviewsPage.propTypes = {
+  id: PropTypes.number,
+  author: PropTypes.string,
+  content: PropTypes.string,
 }
